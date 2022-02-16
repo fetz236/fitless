@@ -2,11 +2,10 @@ import React from 'react'
 import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-
 const fitness = [
     {
         image : require('../../assets/images/store_images/dance_1.jpeg'),
-        category: ["Dance"],
+        categories: ["Dance"],
         name: "Dance 1",
         price: 7,
         reviews: 213,
@@ -14,7 +13,7 @@ const fitness = [
     },
     {
         image : require('../../assets/images/store_images/weights_1.jpeg'),
-        category: ["Weights"],
+        categories: ["Weights"],
         name: "Weights 1",
         price: 7,
         reviews: 213,
@@ -22,7 +21,7 @@ const fitness = [
     },
     {
         image : require('../../assets/images/store_images/ballet_1.jpeg'),
-        category: ["Ballet", "Dance"],
+        categories: ["Ballet", "Dance"],
         name: "Ballet 1",
         price: 7,
         reviews: 213,
@@ -30,7 +29,7 @@ const fitness = [
     },
     {
         image : require('../../assets/images/store_images/yoga_1.jpeg'),
-        category: ["Yoga"],
+        categories: ["Yoga"],
         name: "Yoga 1",
         price: 7,
         reviews: 213,
@@ -38,7 +37,7 @@ const fitness = [
     },
     {
         image : require('../../assets/images/store_images/cycling_1.jpeg'),
-        category: ["Cycling"],
+        categories: ["Cycling"],
         name: "Cycling 1",
         price: 7,
         reviews: 213,
@@ -46,7 +45,7 @@ const fitness = [
     },
     {
         image : require('../../assets/images/store_images/karate_1.jpeg'),
-        category: ["Karate"],
+        categories: ["Karate"],
         name: "Karate 1",
         price: 7,
         reviews: 213,
@@ -54,26 +53,39 @@ const fitness = [
     },
 ];
 
-export default function FitnessItems(props) {
+export default function FitnessItems({navigation, ...props}) {
     console.log(props);
+    
     return (
-        <TouchableOpacity activeOpacity={1} style={{
-            marginBottom:30
-        }}>
-            {fitness.map((fit, index) =>
-            (
-                <View key={index} style={{
-                    marginTop:10,
-                    padding:15,
-                    backgroundColor: "white"
-                }}>
-                    <GymImage image={fit.image}/>
-                    <GymInfo name={fit.name} rating={fit.rating}/>
-                </View> 
-            ))}
-            
-        </TouchableOpacity>
+        <>
+            {fitness.map((fit, index) => (
+                <TouchableOpacity activeOpacity={1} style={{
+                }}
+                onPress={() => navigation.navigate("FitnessDetail", {
+                    name: fit.name,
+                    image: fit.image,
+                    price: fit.price,
+                    reviews: fit.reviews,
+                    rating: fit.rating,
+                    categories: fit.categories,
+                }
+                )}
+                >
+                <View key={index}>
+                    
+                            <View style={{
+                                marginTop:10,
+                                padding:15,
+                                backgroundColor: "white"
+                            }}>
+                                <GymImage image={fit.image}/>
+                                <GymInfo name={fit.name} rating={fit.rating}/>
+                            </View> 
+                </View>
+            </TouchableOpacity>
 
+            ))}
+        </>
     )
 }
 

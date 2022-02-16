@@ -1,14 +1,17 @@
 import React, { useState } from 'react'
 import { View, Text, SafeAreaView, ScrollView } from 'react-native'
+import { Divider } from 'react-native-elements/dist/divider/Divider'
+import BottomTabs from '../components/home/BottomTabs'
 import Categories from '../components/home/Categories'
 import FitnessItems,{
     fitness,
 } from '../components/home/FitnessItems'
 import HeaderTabs from '../components/home/HeaderTabs'
 import SearchBar from '../components/home/SearchBar'
+import navigation from '../navigation'
 
 
-export default function Home() {
+export default function Home({ navigation }) {
     const [city, setCity] = useState("London");
     const [fitness_data, set_fitness_data]= React.useState(fitness)
 
@@ -38,8 +41,13 @@ export default function Home() {
             </View>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Categories />  
-                <FitnessItems fitness_data={fitness_data}/>
+                <FitnessItems 
+                    fitness_data={fitness_data}
+                    navigation ={navigation}
+                />
             </ScrollView>
+            <Divider width={1}/>
+            <BottomTabs></BottomTabs>
         </SafeAreaView>
 
     )

@@ -1,67 +1,21 @@
 import React from 'react'
 import { View, Text, Image } from 'react-native'
 
-const fitness = [
-    {
-        image : require('../../assets/images/store_images/dance_1.jpeg'),
-        category: ["Dance"],
-        name: "Dance 1",
-        description: "Dance Class innit | $$ | :ticket: | 4 :star: (Reviews)",
-        price: 7,
-        reviews: 213,
-        rating: 4.5,
-    },
-    /*
-    {
-        image : require('../../assets/images/store_images/weights_1.jpeg'),
-        category: ["Weights"],
-        name: "Weights 1",
-        description: "Dance Class innit | $$ | :ticket: | 4 :star: (Reviews)",
-        price: 7,
-        reviews: 213,
-        rating: 4.5,
-    },
-    {
-        image : require('../../assets/images/store_images/ballet_1.jpeg'),
-        category: ["Ballet", "Dance"],
-        name: "Ballet 1",
-        description: "Dance Class innit | $$ | :ticket: | 4 :star: (Reviews)",
-        price: 7,
-        reviews: 213,
-        rating: 4.4,
-    },
-    {
-        image : require('../../assets/images/store_images/yoga_1.jpeg'),
-        category: ["Yoga"],
-        name: "Yoga 1",
-        description: "Dance Class innit | $$ | :ticket: | 4 :star: (Reviews)",
-        price: 7,
-        reviews: 213,
-        rating: 4.3,
-    },
-    {
-        image : require('../../assets/images/store_images/cycling_1.jpeg'),
-        category: ["Cycling"],
-        name: "Cycling 1",
-        description: "Dance Class innit | $$ | :ticket: | 4 :star: (Reviews)",
-        price: 7,
-        reviews: 213,
-        rating: 4.2,
-    },
-    {
-        image : require('../../assets/images/store_images/karate_1.jpeg'),
-        category: ["Karate"],
-        name: "Karate 1",
-        description: "Dance Class innit | $$ | :ticket: | 4 :star: (Reviews)",
-        price: 7,
-        reviews: 213,
-        rating: 4.1,
-    },
-    */
-];
 
 
-export default function About() {
+export default function About(props) {
+    const fitness = [
+        {
+            image : props.route.params.image,
+            category: ["Dance"],
+            name: props.route.params.name,
+            description: "Dance Class innit | $$ | :ticket: | 4 :star: (Reviews)",
+            price: 7,
+            reviews: 213,
+            rating: 4.5,
+        },
+    ];
+    
     return (
         <View>
             {fitness.map((fit, index) =>

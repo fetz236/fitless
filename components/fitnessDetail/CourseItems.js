@@ -59,7 +59,7 @@ const CourseInfo = (props) => (
     <View style={{width:240, justifyContent:"space-evenly"}}>
         <Text style={style_sheet.course_title_style}>{props.course_details.name}</Text>
         <Text>{props.course_details.description}</Text>
-        <Text>{props.course_details.price}</Text>
+        <Text>${props.course_details.price}</Text>
 
     </View>
 )
