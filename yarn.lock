@@ -1673,6 +1673,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@popperjs/core@^2.9.2":
+  version "2.11.2"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.2.tgz#830beaec4b4091a9e9398ac50f865ddea52186b9"
+  integrity sha512-92FRmppjjqz29VMJ2dn+xdyXZBrMlE42AV6Kq6BwjWV7CNUW1hs2FtxSNLQE+gJhaZ6AAmYuO9y8dshhcBl7vA==
+
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@protobufjs/aspromise/-/aspromise-1.1.2.tgz#9b8b0cc663d669a7d8f6f5d0893a14d348f30fbf"
@@ -1849,6 +1854,13 @@
     strip-ansi "^5.2.0"
     sudo-prompt "^9.0.0"
     wcwidth "^1.0.1"
+
+"@react-native-community/datetimepicker@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/datetimepicker/-/datetimepicker-5.1.0.tgz#c2e73b6ca375a527e54f0a19b0e4ca42bc8b7382"
+  integrity sha512-DsKmdthZIb1AfuvpPE0iOiw4iQLXUWY3mJEYpGe9iUJt7pOkNnqHk6D95wqg4wjZ2bEBLAPfvndoeWZAjAZKfw==
+  dependencies:
+    invariant "^2.2.4"
 
 "@react-native/assets@1.0.0":
   version "1.0.0"
@@ -2038,6 +2050,11 @@
   integrity sha512-yEJzHoxf6SyQGhBhIYGXQDSCkJjB6HohDShto7m8vaKg9Yp0Yn8+71J9eakh2bnPg6BfsH9PRMhiRTZnd4eXGQ==
   dependencies:
     "@types/yargs-parser" "*"
+
+"@wojtekmaj/date-utils@^1.0.2":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@wojtekmaj/date-utils/-/date-utils-1.0.3.tgz#2dcfd92881425c5923e429c2aec86fb3609032a1"
+  integrity sha512-1VPkkTBk07gMR1fjpBtse4G+oJqpmE+0gUFB0dg3VIL7qJmUVaBoD/vlzMm/jNeOPfvlmerl1lpnsZyBUFIRuw==
 
 "@xmldom/xmldom@~0.7.0":
   version "0.7.5"
@@ -2556,6 +2573,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.6:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
 cli-cursor@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/cli-cursor/-/cli-cursor-2.1.0.tgz"
@@ -2816,6 +2838,11 @@ csstype@^3.0.2:
   version "3.0.10"
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.0.10.tgz"
   integrity sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==
+
+date-fns@^2.24.0:
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
+  integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
 
 dayjs@^1.8.15:
   version "1.10.7"
@@ -3211,7 +3238,7 @@ fbjs-css-vars@^1.0.0:
   resolved "https://registry.npmjs.org/fbjs-css-vars/-/fbjs-css-vars-1.0.2.tgz"
   integrity sha512-b2XGFAFdWZWg0phtAWLHCk836A1Xann+I+Dgd3Gk64MHKZO44FfoD1KxyvbSh0qZsIoXQGGlVztIY+oitJPpRQ==
 
-fbjs@^0.8.4:
+fbjs@^0.8.4, fbjs@^0.8.9:
   version "0.8.18"
   resolved "https://registry.npmjs.org/fbjs/-/fbjs-0.8.18.tgz"
   integrity sha512-EQaWFK+fEPSoibjNy8IxUtaFOMXcWsY0JaVrQoZR9zC8N2Ygf9iDITPWjUTVIax95b6I742JFLqASHfsag/vKA==
@@ -3424,6 +3451,11 @@ fs.realpath@^1.0.0:
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
+fs@^0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.1-security.tgz#8a7bd37186b6dddf3813f23858b57ecaaf5e41d4"
+  integrity sha1-invTcYa23d84E/I4WLV+yq9eQdQ=
+
 fsevents@^2.1.2:
   version "2.3.2"
   resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
@@ -3459,6 +3491,13 @@ get-stream@^4.0.0:
   integrity sha512-GMat4EJ5161kIy2HevLlr4luNjBgvmj413KaQA7jt4V8B4RDsfpHk7WQ9GVqfYyyx8OS/L66Kox+rJRNklLK7w==
   dependencies:
     pump "^3.0.0"
+
+get-user-locale@^1.2.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/get-user-locale/-/get-user-locale-1.4.0.tgz#a2c4b5da46feec9f03c9b07d197b1620490a5370"
+  integrity sha512-gQo03lP1OArHLKlnoglqrGGl7b04u2EP9Xutmp72cMdtrrSD7ZgIsCsUKZynYWLDkVJW33Cj3pliP7uP0UonHQ==
+  dependencies:
+    lodash.once "^4.1.1"
 
 get-value@^2.0.3, get-value@^2.0.6:
   version "2.0.6"
@@ -3581,7 +3620,7 @@ hoist-non-react-statics@^2.3.1:
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
   integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
 
-hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
+hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.1, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -3630,6 +3669,11 @@ immediate@~3.0.5:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
   integrity sha1-nbHb0Pr43m++D13V5Wu2BigN5ps=
+
+immutable@^4.0.0-rc.12:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.0.0.tgz#b86f78de6adef3608395efb269a91462797e2c23"
+  integrity sha512-zIE9hX70qew5qTUjSS7wi1iwj/l7+m54KWU247nhM3v806UdGj1yDndXj+IOYxxtW9zyLI+xqFNZjTuDaLUqFw==
 
 import-fresh@^2.0.0:
   version "2.0.0"
@@ -4147,7 +4191,7 @@ lodash.camelcase@^4.3.0:
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
 
-lodash.debounce@^4.0.8:
+lodash.debounce@4.0.8, lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
@@ -4171,6 +4215,11 @@ lodash.omit@^4.5.0:
   version "4.5.0"
   resolved "https://registry.npmjs.org/lodash.omit/-/lodash.omit-4.5.0.tgz"
   integrity sha1-brGa5aHuHdnfC5aeZs4Lf6MLXmA=
+
+lodash.once@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
+  integrity sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
 
 lodash.pick@^4.4.0:
   version "4.4.0"
@@ -4270,6 +4319,16 @@ md5-file@^3.2.3:
   integrity sha512-3Tkp1piAHaworfcCgH0jKbTvj1jWWFgbvh2cXaNCgHwyTCBxxvD1Y04rmfpvdPm1P4oXMOpm6+2H7sr7v9v8Fw==
   dependencies:
     buffer-alloc "^1.1.0"
+
+memoize-one@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.2.1.tgz#8337aa3c4335581839ec01c3d594090cebe8f00e"
+  integrity sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==
+
+merge-class-names@^1.1.1:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/merge-class-names/-/merge-class-names-1.4.2.tgz#78d6d95ab259e7e647252a7988fd25a27d5a8835"
+  integrity sha512-bOl98VzwCGi25Gcn3xKxnR5p/WrhWFQB59MS/aGENcmUc6iSm96yrFDF0XSNurX9qN4LbJm0R9kfvsQ17i8zCw==
 
 merge-stream@^2.0.0:
   version "2.0.0"
@@ -4623,6 +4682,11 @@ mkdirp@^0.5.1:
   integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
   dependencies:
     minimist "^1.2.5"
+
+moment@^2.24.0:
+  version "2.29.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
+  integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
 
 ms@2.0.0:
   version "2.0.0"
@@ -5056,7 +5120,14 @@ prompts@^2.4.0:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.0, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@15.5.8:
+  version "15.5.8"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.8.tgz#6b7b2e141083be38c8595aa51fc55775c7199394"
+  integrity sha1-a3suFBCDvjjIWVqlH8VXdccZk5Q=
+  dependencies:
+    fbjs "^0.8.9"
+
+prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -5122,6 +5193,28 @@ range-parser@~1.2.1:
   resolved "https://registry.npmjs.org/range-parser/-/range-parser-1.2.1.tgz"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
 
+react-calendar@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/react-calendar/-/react-calendar-3.7.0.tgz#951d56e91afb33b1c1e019cb790349fbffcc6894"
+  integrity sha512-zkK95zWLWLC6w3O7p3SHx/FJXEyyD2UMd4jr3CrKD+G73N+G5vEwrXxYQCNivIPoFNBjqoyYYGlkHA+TBDPLCw==
+  dependencies:
+    "@wojtekmaj/date-utils" "^1.0.2"
+    get-user-locale "^1.2.0"
+    merge-class-names "^1.1.1"
+    prop-types "^15.6.0"
+
+react-datepicker@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/react-datepicker/-/react-datepicker-4.6.0.tgz#10fc7c5b9c72df5c3e29712d559cb3fe73fd9f62"
+  integrity sha512-JGSQnQSQYUkS7zvSaZuyHv5lxp3wMrN7GXV0VA0E9Ax9fL3Bb6E1pSXjL6C3WoeuV8dt/mItQfRkPpRGCrl/OA==
+  dependencies:
+    "@popperjs/core" "^2.9.2"
+    classnames "^2.2.6"
+    date-fns "^2.24.0"
+    prop-types "^15.7.2"
+    react-onclickoutside "^6.12.0"
+    react-popper "^2.2.5"
+
 react-devtools-core@^4.6.0:
   version "4.22.1"
   resolved "https://registry.npmjs.org/react-devtools-core/-/react-devtools-core-4.22.1.tgz"
@@ -5139,6 +5232,11 @@ react-dom@17.0.1:
     object-assign "^4.1.1"
     scheduler "^0.20.1"
 
+react-fast-compare@^3.0.1:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
+  integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
+
 react-is@^16.13.0, react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
@@ -5148,6 +5246,23 @@ react-is@^17.0.1, react-is@^17.0.2:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
+
+react-native-calendars@^1.1278.0:
+  version "1.1278.0"
+  resolved "https://registry.yarnpkg.com/react-native-calendars/-/react-native-calendars-1.1278.0.tgz#6cda3a0a16f0401cbb719ddf535f542bc77bec1b"
+  integrity sha512-SZZsvJg1Waml/qfalQYFMRFwlpHq7PRJH6nw8JkNMu6mGKw/u0OsiYucy/ynfQy8hVnjvhJORVhHokd7JCYh1w==
+  dependencies:
+    fs "^0.0.1-security"
+    hoist-non-react-statics "^3.3.1"
+    immutable "^4.0.0-rc.12"
+    lodash "^4.17.15"
+    memoize-one "^5.2.1"
+    prop-types "^15.5.10"
+    react-native-swipe-gestures "^1.0.5"
+    recyclerlistview "^3.0.5"
+    xdate "^0.8.0"
+  optionalDependencies:
+    moment "^2.24.0"
 
 react-native-codegen@^0.0.6:
   version "0.0.6"
@@ -5216,6 +5331,11 @@ react-native-size-matters@^0.3.1:
   resolved "https://registry.npmjs.org/react-native-size-matters/-/react-native-size-matters-0.3.1.tgz"
   integrity sha512-mKOfBLIBFBcs9br1rlZDvxD5+mAl8Gfr5CounwJtxI6Z82rGrMO+Kgl9EIg3RMVf3G855a85YVqHJL2f5EDRlw==
 
+react-native-swipe-gestures@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-native-swipe-gestures/-/react-native-swipe-gestures-1.0.5.tgz#a172cb0f3e7478ccd681fd36b8bfbcdd098bde7c"
+  integrity sha512-Ns7Bn9H/Tyw278+5SQx9oAblDZ7JixyzeOczcBK8dipQk2pD7Djkcfnf1nB/8RErAmMLL9iXgW0QHqiII8AhKw==
+
 react-native-vector-icons@^9.0.0:
   version "9.0.0"
   resolved "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-9.0.0.tgz"
@@ -5281,6 +5401,19 @@ react-native@0.64.3:
     whatwg-fetch "^3.0.0"
     ws "^6.1.4"
 
+react-onclickoutside@^6.12.0:
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.12.1.tgz#92dddd28f55e483a1838c5c2930e051168c1e96b"
+  integrity sha512-a5Q7CkWznBRUWPmocCvE8b6lEYw1s6+opp/60dCunhO+G6E4tDTO2Sd2jKE+leEnnrLAE2Wj5DlDHNqj5wPv1Q==
+
+react-popper@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-2.2.5.tgz#1214ef3cec86330a171671a4fbcbeeb65ee58e96"
+  integrity sha512-kxGkS80eQGtLl18+uig1UIf9MKixFSyPxglsgLBxlYnyDf65BiY9B3nZSc6C9XUNDgStROB0fMQlTEz1KxGddw==
+  dependencies:
+    react-fast-compare "^3.0.1"
+    warning "^4.0.2"
+
 react-redux@^7.2.6:
   version "7.2.6"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.2.6.tgz#49633a24fe552b5f9caf58feb8a138936ddfe9aa"
@@ -5335,6 +5468,15 @@ rechoir@^0.6.2:
   integrity sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=
   dependencies:
     resolve "^1.1.6"
+
+recyclerlistview@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/recyclerlistview/-/recyclerlistview-3.0.5.tgz#50bf5bcaa401d56bb6bb264354083f4d424408eb"
+  integrity sha512-JVHz13u520faEsbVqFrJOMuJjc4mJlOXODe5QdqAJHdl5/IpyYeo83uiHrpzxyLb8QtJ0889JMlDik+Z1Ed0QQ==
+  dependencies:
+    lodash.debounce "4.0.8"
+    prop-types "15.5.8"
+    ts-object-utils "0.0.5"
 
 redux@^4.0.0:
   version "4.1.2"
@@ -5555,6 +5697,11 @@ sane@^4.0.3:
     micromatch "^3.1.4"
     minimist "^1.1.1"
     walker "~1.0.5"
+
+sassy-datepicker@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/sassy-datepicker/-/sassy-datepicker-0.8.0.tgz#c7c9f44e8b2eb2ce3e9ad28a1ffd8b9337ec1a9a"
+  integrity sha512-OBn2Gq5IlUOkv07hZ0N6IM58PqdI5vJTuuWt54qlKxd8Fur5rd1B1/hwhtlt4rO/H9gq3SV9/3Cb/TXW15P/1w==
 
 sax@>=0.6.0, sax@^1.2.1:
   version "1.2.4"
@@ -6065,6 +6212,11 @@ ts-interface-checker@^0.1.9:
   resolved "https://registry.npmjs.org/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
 
+ts-object-utils@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/ts-object-utils/-/ts-object-utils-0.0.5.tgz#95361cdecd7e52167cfc5e634c76345e90a26077"
+  integrity sha1-lTYc3s1+UhZ8/F5jTHY0XpCiYHc=
+
 tslib@^2.0.1, tslib@^2.1.0, tslib@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
@@ -6221,6 +6373,13 @@ warn-once@^0.1.0:
   resolved "https://registry.yarnpkg.com/warn-once/-/warn-once-0.1.0.tgz#4f58d89b84f968d0389176aa99e0cf0f14ffd4c8"
   integrity sha512-recZTSvuaH/On5ZU5ywq66y99lImWqzP93+AiUo9LUwG8gXHW+LJjhOd6REJHm7qb0niYqrEQJvbHSQfuJtTqA==
 
+warning@^4.0.2:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
+  integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
+  dependencies:
+    loose-envify "^1.0.0"
+
 wcwidth@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/wcwidth/-/wcwidth-1.0.1.tgz"
@@ -6349,6 +6508,11 @@ xcode@^3.0.1:
   dependencies:
     simple-plist "^1.1.0"
     uuid "^7.0.3"
+
+xdate@^0.8.0:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/xdate/-/xdate-0.8.2.tgz#d7b033c00485d02695baf0044f4eacda3fc961a3"
+  integrity sha1-17AzwASF0CaVuvAET06s2j/JYaM=
 
 xml2js@0.4.23:
   version "0.4.23"

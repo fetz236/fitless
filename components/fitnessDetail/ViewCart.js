@@ -30,7 +30,7 @@ export default function ViewCart() {
                     <Text style={{
                         color: "white",
                         fontSize: 17,
-                    }}> View Cart </Text>
+                    }}> Add to Cart </Text>
                 </TouchableOpacity>
             </View>
         </View>
