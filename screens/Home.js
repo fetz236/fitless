@@ -36,7 +36,9 @@ export default function Home({ navigation }) {
     return (
         <SafeAreaView style= {{ backgroundColor: "lightgray", flex: 1}}>
             <View style={{backgroundColor: "white", padding: 15}}>
-                <HeaderTabs />
+                <HeaderTabs
+                    navigation = {navigation}
+                />
                 <SearchBar />
             </View>
             <ScrollView showsVerticalScrollIndicator={false}>

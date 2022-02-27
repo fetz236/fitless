@@ -54,7 +54,6 @@ const fitness = [
 ];
 
 export default function FitnessItems({navigation, ...props}) {
-    console.log(props);
     
     return (
         <>

@@ -1,6 +1,8 @@
 import React from 'react'
 import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
 import { Divider } from 'react-native-elements'
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { useDispatch } from 'react-redux'
 
 const course_details = [
     {
@@ -23,6 +25,7 @@ const course_details = [
     },
 ];
 
+
 const style_sheet = StyleSheet.create({
     course_item_style: {
         flexDirection: 'row',
@@ -32,24 +35,41 @@ const style_sheet = StyleSheet.create({
     },
     course_title_style:{
         fontSize:19,
-        fontWeight:'600',
-    },
-    course_description_style:{
+        fontWeight:'600',    },
 
-    }
 })
-export default function CourseItems() {
+export default function CourseItems({navigation, ...props}) {
+    const dispatch = useDispatch();
+    
+    const select_item = (item) => dispatch({
+        type: 'ADD_TO_CART',
+        payload: item,
+    });
+
     return (
         <ScrollView showsVerticalScrollIndicator={false}>
         {course_details.map((course, index) => (
-            <View style ={{marginBottom:10}}>
-                <View style={style_sheet.course_item_style}>
-                    <CourseInfo course_details={course}/>
-                    <CourseImage course_details={course}/>
-                </View>
-                <Divider width={0.5} orientation="vertical" style={{marginTop:5}}/>
+            <TouchableOpacity activeOpacity={1} style={{
+                }}
+                
+                onPress={() => navigation.navigate("ScheduleDetail", {
+                    name: "fit.name",
+                    image: "fit.image",
+                    price: "fit.price",
+                    reviews: "fit.reviews",
+                    rating: "fit.rating",
+                    categories: "fit.categories",
+                }
+            )}>
+                <View style ={{marginBottom:10}}>
+                    <View style={style_sheet.course_item_style}>
+                        <CourseInfo course_details={course}/>
+                        <CourseImage course_details={course}/>
+                    </View>
+                    <Divider width={0.5} orientation="vertical" style={{marginTop:5}}/>
 
-            </View>
+                </View>
+            </TouchableOpacity>
         ))}
         </ScrollView>
     )
