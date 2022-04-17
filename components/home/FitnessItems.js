@@ -60,6 +60,7 @@ export default function FitnessItems({navigation, ...props}) {
             {fitness.map((fit, index) => (
                 <TouchableOpacity activeOpacity={1} style={{
                 }}
+                key={index}
                 onPress={() => navigation.navigate("FitnessDetail", {
                     name: fit.name,
                     image: fit.image,

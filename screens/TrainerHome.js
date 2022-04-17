@@ -18,7 +18,9 @@ export default function TrainerHome({route, navigation}) {
                 <SearchBar/>
             </View>
             <ScrollView showsVerticalScrollIndicator={false}>
-                <TrainerItems></TrainerItems>
+                <TrainerItems
+                    navigation = {navigation}
+                />
             </ScrollView>
             <Divider width={1}/>
             <BottomTabs></BottomTabs>

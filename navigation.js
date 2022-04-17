@@ -8,7 +8,8 @@ import store from "./redux/Store"
 import configureStore from './redux/Store'
 import ScheduleDetail from './screens/ScheduleDetail'
 import TrainerHome from './screens/TrainerHome'
-
+import TrainerScheduleDetail from './screens/TrainerScheduleDetail'
+import TrainerDetail from './screens/TrainerDetail'
 
 export default function RootNavigation() {
     const store = configureStore();
@@ -26,6 +27,8 @@ export default function RootNavigation() {
                     <stack.Screen name = "TrainerHome" component={TrainerHome}/>
                     <stack.Screen name = "FitnessDetail" component={FitnessDetail}/>
                     <stack.Screen name = "ScheduleDetail" component={ScheduleDetail}/>
+                    <stack.Screen name = "TrainerScheduleDetail" component={TrainerScheduleDetail}/>
+                    <stack.Screen name = "TrainerDetail" component={TrainerDetail}/>
                 </stack.Navigator>
             </NavigationContainer>
         </ReduxProvider>
