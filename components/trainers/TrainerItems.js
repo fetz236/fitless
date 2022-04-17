@@ -51,14 +51,13 @@ export default function TrainerItems({navigation, ...props}) {
         {trainer_details.map((trainer, index) => (
             <TouchableOpacity activeOpacity={1} style={{
                 }}
+                key={index}
                 
-                onPress={() => navigation.navigate("ScheduleDetail", {
-                    name: "fit.name",
-                    image: "fit.image",
-                    price: "fit.price",
-                    reviews: "fit.reviews",
-                    rating: "fit.rating",
-                    categories: "fit.categories",
+                onPress={() => navigation.navigate("TrainerSchedule", {
+                    name: trainer.name,
+                    description: trainer.description,
+                    price: trainer.price,
+                    image: trainer.image,
                 }
             )}>
                 <View style ={{marginBottom:10}}>

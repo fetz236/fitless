@@ -51,7 +51,7 @@ export default function CourseItems({navigation, ...props}) {
         {course_details.map((course, index) => (
             <TouchableOpacity activeOpacity={1} style={{
                 }}
-                
+                key={index}
                 onPress={() => navigation.navigate("ScheduleDetail", {
                     name: "fit.name",
                     image: "fit.image",
