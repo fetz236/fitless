@@ -1,51 +1,45 @@
 import React from 'react'
 import { View, Text, Image, ScrollView } from 'react-native'
+import { categories_css } from '../../styles/home/CategoriesStyle';
+import Icon from 'react-native-vector-icons/Ionicons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const items = [
     {
-        image : require('../../assets/images/category_images/dance-clip-art-images.png'),
-        text: "Dance"
+        image : "rowing",
+        text: "Rowing"
     },
     {
-        image : require('../../assets/images/category_images/weights-clip-art-images.jpeg'),
+        image : "dumbbell",
         text: "Weights"
     },
     {
-        image : require('../../assets/images/category_images/ballet-clip-art-images.png'),
-        text: "Ballet"
+        image : "bowling",
+        text: "Bowling"
     },
     {
-        image : require('../../assets/images/category_images/yoga-clip-art-images.jpeg'),
+        image : "yoga",
         text: "Yoga"
     },
     {
-        image : require('../../assets/images/category_images/cycling-clip-art-images.jpeg'),
+        image : "bike",
         text: "Cycling"
     },
     {
-        image : require('../../assets/images/category_images/karate-clip-art-images.png'),
+        image : "karate",
         text: "Karate"
     },
 ];
 
 export default function Categories() {
     return (
-        <View style={{
-            marginTop:5,
-            backgroundColor: "white",
-            paddingVertical: 10,
-            paddingLeft: 15,
-        }}>
+        <View style={categories_css.categories_container}>
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 {items.map((item,index) =>(
-                    <View key={index} style={{alignItems:'center', marginRight:20}}>
-                    <Image source={item.image} 
-                    style={{
-                        width:50,
-                        height:40,
-                        resizeMode: "contain",
-                    }}/>
-                    <Text style={{fontSize: 14, fontWeight:"600"}}>{item.text}</Text>
+                    <View key={index} style={categories_css.item_container}>
+                    <MaterialCommunityIcons name={item.image} 
+                    style={categories_css.image_def}/>
+                    <Text style={categories_css.text_def}>{item.text}</Text>
                 </View>  
                 ))}           
             </ScrollView>

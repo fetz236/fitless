@@ -6,6 +6,7 @@ import Categories from '../components/home/Categories'
 import FitnessItems,{
     fitness,
 } from '../components/home/FitnessItems'
+import GeneralInfo from '../components/home/GeneralInfo'
 import HeaderTabs from '../components/home/HeaderTabs'
 import SearchBar from '../components/home/SearchBar'
 import navigation from '../navigation'
@@ -34,23 +35,29 @@ export default function Home({ navigation }) {
     }      
 
     return (
-        <SafeAreaView style= {{ backgroundColor: "lightgray", flex: 1}}>
-            <View style={{backgroundColor: "white", padding: 15}}>
-                <HeaderTabs
-                    navigation = {navigation}
-                />
-                <SearchBar />
+        <>
+            <SafeAreaView style= {{ backgroundColor: "white", flex: 1}}>
+                <View style={{backgroundColor: "white"}}>
+                    <GeneralInfo navigation={navigation}></GeneralInfo>
+                </View>
+                <View style={{backgroundColor: "white", padding: 15}}>
+                    <HeaderTabs
+                        navigation = {navigation}
+                    />
+                    <SearchBar />
+                </View>
+                <ScrollView showsVerticalScrollIndicator={false}>
+                    <Categories />  
+                    <FitnessItems 
+                        fitness_data={fitness_data}
+                        navigation ={navigation}
+                    />
+                </ScrollView>
+                
+            </SafeAreaView>
+            <View style={{backgroundColor: "#800020"}}>
+                <BottomTabs/>
             </View>
-            <ScrollView showsVerticalScrollIndicator={false}>
-                <Categories />  
-                <FitnessItems 
-                    fitness_data={fitness_data}
-                    navigation ={navigation}
-                />
-            </ScrollView>
-            <Divider width={1}/>
-            <BottomTabs></BottomTabs>
-        </SafeAreaView>
-
+        </>
     )
 }

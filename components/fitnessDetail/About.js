@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, Image } from 'react-native'
+import { about_sheet } from '../../styles/fitnessDetail/AboutStyle';
 
 
 
@@ -20,11 +21,7 @@ export default function About(props) {
         <View>
             {fitness.map((fit, index) =>
             (
-                <View key={index} style={{
-                    marginTop:10,
-                    padding:15,
-                    backgroundColor: "white"
-                }}>
+                <View key={index} style={about_sheet.about_full_container}>
                     <FitnessImage image={fit.image}/>
                     <FitnessTitle name={fit.name}></FitnessTitle>
                     <FitnessDescription description={fit.description}></FitnessDescription>
@@ -35,28 +32,14 @@ export default function About(props) {
 }
 
 const FitnessImage = (props) =>(
-    <Image source={props.image} style={{
-        width:"100%",
-        height:180
-    }}/>
+    <Image source={props.image} style={about_sheet.about_img}/>
 )
 
 const FitnessTitle = (props)=>(
-    <Text style={{
-        fontSize:29,
-        fontWeight:"600",
-        marginTop: 10,
-        marginHorizontal:15,
-    }}>{props.name}</Text> 
+    <Text style={about_sheet.about_title}>{props.name}</Text> 
 )
 
 const FitnessDescription = (props) => (
-    <Text style ={{
-        fontSize:15.5,
-        fontWeight:"400",
-        marginTop:10,
-        marginHorizontal: 15,
-
-    }}>{props.description}
+    <Text style ={about_sheet.about_desc}>{props.description}
     </Text>
 )

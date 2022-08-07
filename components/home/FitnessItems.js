@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import { fi_items_css } from '../../styles/home/FitnessItemsStyle';
 
 const fitness = [
     {
@@ -73,11 +74,7 @@ export default function FitnessItems({navigation, ...props}) {
                 >
                 <View key={index}>
                     
-                            <View style={{
-                                marginTop:10,
-                                padding:15,
-                                backgroundColor: "white"
-                            }}>
+                            <View style={fi_items_css.main_container}>
                                 <GymImage image={fit.image}/>
                                 <GymInfo name={fit.name} rating={fit.rating}/>
                             </View> 
@@ -90,24 +87,12 @@ export default function FitnessItems({navigation, ...props}) {
 }
 
 const GymImage = (props) => (
-    <View style={{
-
-        marginTop:5,
-        backgroundColor: "white",
-        paddingVertical: 10,
-        paddingLeft: 15,
-    }}>
-
-            
-            <View style={{alignItems:'center', marginRight:20}}>
+    <View style={fi_items_css.gym_image_container}>
+            <View style={fi_items_css.image_container}>
             <>
             <Image source={props.image} 
-            style={{
-                width:500,
-                height:200,
-                resizeMode: "contain",
-            }}/>
-            <TouchableOpacity style={{position: "absolute", right: 20, marginTop:20}}>
+            style={fi_items_css.image_def}/>
+            <TouchableOpacity style={fi_items_css.icon_container}>
                 <MaterialCommunityIcons name='heart-outline' size={25} color='white'></MaterialCommunityIcons>
             </TouchableOpacity>
             </>
@@ -116,26 +101,13 @@ const GymImage = (props) => (
 )
 
 const GymInfo = (props) => (
-    <View style={{
-        flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: 'center',
-        marginTop: 5,
-        }}>
+    <View style={fi_items_css.gym_info_container}>
             <View>
-                <Text style={{fontSize: 14, fontWeight:"600"}}>{props.name}</Text>
-                <Text style={{fontSize: 12, fontWeight:"600", color: "gray"}}>headline 2</Text>
+                <Text style={fi_items_css.headline_1}>{props.name}</Text>
+                <Text style={fi_items_css.headline_2}>headline 2</Text>
             </View>
-        <View style={{
-            fontSize: 12, 
-            fontWeight:"600", 
-            backgroundColor:"lightgray", 
-            height:30, 
-            width:30, 
-            alignItems:"center",
-            justifyContent: 'center',
-            borderRadius: 15,}}>
-            <Text >{props.rating}</Text>
+        <View style={fi_items_css.description_container}>
+            <Text style={{color:'white'}}>{props.rating}</Text>
         </View>
     </View>
 )
