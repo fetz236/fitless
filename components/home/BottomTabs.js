@@ -1,18 +1,25 @@
 import React from 'react'
 import { View, Text,Image } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { bottom_tabs_css } from '../../styles/home/BottomTabsStyle';
-import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function BottomTabs() {
     return (
-            <View style={bottom_tabs_css.bt_container}>
+            <View style={{
+            flexDirection:'row',
+            justifyContent: 'space-around',
+            marginTop:10,
+            marginLeft:10,
+        }}>
             {items.map((item,index) =>(
                 <TouchableOpacity>
-                    <View key={index} style={bottom_tabs_css.item_container}>
-                    <Icon name={item.image} 
-                    style={bottom_tabs_css.image_def}/>
-                    <Text style={bottom_tabs_css.text_def}>{item.text}</Text>
+                    <View key={index} style={{alignItems:'center', marginRight:20}}>
+                    <Image source={item.image} 
+                    style={{
+                        width:25,
+                        height:25,
+                        resizeMode: "contain",
+                    }}/>
+                    <Text style={{fontSize: 8, fontWeight:"400", marginTop: 5}}>{item.text}</Text>
                     </View>
                 </TouchableOpacity>
 
@@ -24,15 +31,19 @@ export default function BottomTabs() {
 
 const items = [
     {
-        image : "home",
+        image : require('../../assets/icons/bottom_icons/home_icon.jpg'),
         text: "Home"
     },
     {
-        image : "search",
+        image : require('../../assets/icons/bottom_icons/search_icon.jpg'),
         text: "Search"
     },
     {
-        image : "calendar",
+        image : require('../../assets/icons/bottom_icons/upcoming_icon.jpg'),
         text: "Upcoming"
+    },
+    {
+        image : require('../../assets/icons/bottom_icons/account_icon.jpg'),
+        text: "Account"
     },
 ];

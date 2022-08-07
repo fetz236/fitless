@@ -5,7 +5,7 @@ import { Divider } from 'react-native-elements';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 
 export const ViewSchedule = () => {
-  const [date, setDate] = useState(new Date());
+  const [date, setDate] = useState(new Date(1598051730000));
   const [mode, setMode] = useState('date');
   const [show, setShow] = useState(false);
 

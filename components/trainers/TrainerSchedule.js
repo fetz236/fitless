@@ -3,7 +3,19 @@ import {View, Text, Platform, StyleSheet} from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { Divider } from 'react-native-elements';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
-import { schedule_style_sheet } from '../../styles/trainers/TrainerScheduleStyle'
+
+const schedule_style_sheet = StyleSheet.create({
+    schedule_item_style: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop:10,
+        marginLeft:20,
+    },
+    schedule_title_style:{
+        fontSize:19,
+        fontWeight:'600',    },
+  
+})
 
 const trainer_details = [
     {
@@ -19,7 +31,7 @@ const trainer_details = [
 ];
 
 export const TrainerSchedule = () => {
-    const [date, setDate] = useState(new Date());
+    const [date, setDate] = useState(new Date(1598051730000));
     const [mode, setMode] = useState('date');
     const [show, setShow] = useState(false);
   
@@ -39,7 +51,7 @@ export const TrainerSchedule = () => {
   
     return (
       <View style ={{
-          marginTop:'13%',
+          marginTop:80,
       }}>
           <View style ={{
               justifyContent: 'center',
@@ -55,7 +67,13 @@ export const TrainerSchedule = () => {
                   is24Hour={true}
                   display="default"
                   onChange={onChange}
-                  style={schedule_style_sheet.date_time_style}
+                  style={{
+                      width: 100,
+                      alignItems:'center',
+                      justifyContent: 'center',
+                      flexDirection: 'column',
+                      marginTop: 10,
+                  }}
                   />
           </View>
           <Divider style={{

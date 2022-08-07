@@ -10,7 +10,6 @@ import ScheduleDetail from './screens/ScheduleDetail'
 import TrainerHome from './screens/TrainerHome'
 import TrainerScheduleDetail from './screens/TrainerScheduleDetail'
 import TrainerDetail from './screens/TrainerDetail'
-import UserDetail from './screens/UserDetail'
 
 export default function RootNavigation() {
     const store = configureStore();
@@ -30,7 +29,6 @@ export default function RootNavigation() {
                     <stack.Screen name = "ScheduleDetail" component={ScheduleDetail}/>
                     <stack.Screen name = "TrainerScheduleDetail" component={TrainerScheduleDetail}/>
                     <stack.Screen name = "TrainerDetail" component={TrainerDetail}/>
-                    <stack.Screen name = "UserDetail" component={UserDetail}/>
                 </stack.Navigator>
             </NavigationContainer>
         </ReduxProvider>

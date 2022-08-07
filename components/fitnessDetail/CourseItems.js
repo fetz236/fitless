@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
 import { Divider } from 'react-native-elements'
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { useDispatch } from 'react-redux'
-import { course_sheet } from '../../styles/fitnessDetail/CourseItemsStyle';
 
 const course_details = [
     {
@@ -27,6 +26,18 @@ const course_details = [
 ];
 
 
+const style_sheet = StyleSheet.create({
+    course_item_style: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop:10,
+        marginLeft:20,
+    },
+    course_title_style:{
+        fontSize:19,
+        fontWeight:'600',    },
+
+})
 export default function CourseItems({navigation, ...props}) {
     const dispatch = useDispatch();
     
@@ -51,7 +62,7 @@ export default function CourseItems({navigation, ...props}) {
                 }
             )}>
                 <View style ={{marginBottom:10}}>
-                    <View style={course_sheet.course_item}>
+                    <View style={style_sheet.course_item_style}>
                         <CourseInfo course_details={course}/>
                         <CourseImage course_details={course}/>
                     </View>
@@ -66,7 +77,7 @@ export default function CourseItems({navigation, ...props}) {
 
 const CourseInfo = (props) => (
     <View style={{width:240, justifyContent:"space-evenly"}}>
-        <Text style={course_sheet.course_title}>{props.course_details.name}</Text>
+        <Text style={style_sheet.course_title_style}>{props.course_details.name}</Text>
         <Text>{props.course_details.description}</Text>
         <Text>${props.course_details.price}</Text>
 
@@ -75,6 +86,6 @@ const CourseInfo = (props) => (
 
 const CourseImage = (props) => (
     <View>
-        <Image source={props.course_details.image} style={course_sheet.course_image}/>
+        <Image source={props.course_details.image} style={{width:100, height:100, borderRadius:8, marginRight:20, marginBottom:5}}/>
     </View>
 )
